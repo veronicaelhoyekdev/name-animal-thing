@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Game</title>
+    <link rel="stylesheet" href="../css/creategame.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body style="background-image: url('../ressources/background.jpg'); background-size: cover; background-position: center;">
+    <nav class="navbar">
+        <a href="dashboard" class="logo">Name, Animal, Thing</a>
+        <ul class="nav-links">
+            <li><a href="dashboard">Home</a></li>
+            <li><a href="viewprofile">View Profile</a></li>
+            <li><a href="contact">Contact Us</a></li>
+            <li><a href="signout">Log Out</a></li>
+        </ul>
+    </nav>
+    <div class="background-overlay">
+        <div class="create-game-container">
+            <h2>Create Game</h2>
+            <form class="create-game-form">
+                <div class="form-group">
+                    <label for="rounds">Select Number of Rounds:</label>
+                    <input type="number" id="rounds" name="rounds" min="1" max="5" value="1" required>
+                </div>
+                <div class="form-group">
+                    <label>Select Categories:</label>
+                    <div class="category-checkboxes">
+                        <label><input type="checkbox" name="category" value="Name" checked> Name</label>
+                        <label><input type="checkbox" name="category" value="Place"> Place</label>
+                        <label><input type="checkbox" name="category" value="Animal"> Animal</label>
+                        <label><input type="checkbox" name="category" value="Thing"> Thing</label>
+                        <label><input type="checkbox" name="category" value="Song"> Song</label>
+                        <label><input type="checkbox" name="category" value="Movie/Show"> Movie/Show</label>
+                        <label><input type="checkbox" name="category" value="Food"> Food</label>
+                        <label><input type="checkbox" name="category" value="Celebrity"> Celebrity</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="button">Create Room</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../js/creategame.js"></script> 
+</body>
+</html>

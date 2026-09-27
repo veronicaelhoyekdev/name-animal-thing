@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Waiting Room</title>
+    <link rel="stylesheet" href="../css/waitingroom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body style="background-image: url('../ressources/background.jpg'); background-size: cover; background-position: center;">
+    <nav class="navbar">
+        <a href="dashboard" class="logo">Name, Animal, Thing</a>
+        <ul class="nav-links">
+            <li><a href="dashboard">Home</a></li>
+            <li><a href="viewprofile">View Profile</a></li>
+            <li><a href="contact">Contact Us</a></li>
+            <li><a href="signout">Log Out</a></li>
+        </ul>
+    </nav>
+
+    <div class="background-overlay">
+        <div class="waiting-room-container">
+            <h2 id="room-number"></h2>
+            <div class="user-grid">
+            </div>
+            <button class="button">Start game</button>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../js/waitingroom.js"></script>
+</body>
+</html>

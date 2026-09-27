@@ -1,0 +1,180 @@
+/* Basic Reset */
+@font-face {
+    font-family: 'SunnySpells-Regular';
+    src: url('../ressources/sunny-spells-font/SunnyspellsRegular-MV9ze.otf') format('opentype'); 
+}
+
+/* Body and global styles */
+body {
+    font-family: 'SunnySpells-Regular', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Background overlay */
+.background-overlay {
+    position: relative;
+}
+
+/* Navigation styles */
+.navbar {
+    background-color: #333;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    padding: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@keyframes shimmer {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.navbar {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    text-decoration: none;
+    color: #FF6347;
+    font-size: 24px;
+    transition: color 0.3s ease;
+    margin-left: 20px;
+}
+
+.logo:hover {
+    color: #cc4c34;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Ensure the items align within the navbar */
+}
+
+.nav-links li {
+    margin-left: 20px;
+    white-space: nowrap; /* Prevent button wrapping */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FF6347;
+}
+
+
+/* Grades container styles */
+.grades-container {
+    background-color: rgba(255, 99, 71, 0.8);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: auto; /* Increased width */
+    margin: auto;
+    color: #fff;
+    max-height: 550px;
+    margin-top: 90px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 40px;
+}
+
+/* Styles for player grades list */
+.grades-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.player-grade {
+    flex: 1;
+    min-width: 200px; /* Minimum width of each player grade section */
+    max-width: 300px; /* Maximum width to prevent overly wide sections */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-grade input[type="text"] {
+    width: 100%; /* Full width of the container */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #eee;
+    overflow-x: scroll;
+}
+
+.grade-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.grade-section select {
+    width: 50px; /* Adjusted width of the select box */
+    padding: 10px 6px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+}
+
+#submitGradesButton {
+    background-color: #000000;
+    color: #fff;
+    font-family: 'SunnySpells-Regular', sans-serif;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+#submitGradesButton:hover {
+    background-color: #FF4500;
+}

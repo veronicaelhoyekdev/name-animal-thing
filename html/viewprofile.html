@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Profile</title>
+    <link rel="stylesheet" href="../css/viewprofile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="dashboard" class="logo">Name, Animal, Thing</a>
+        <ul class="nav-links">
+            <li><a href="dashboard">Home</a></li>
+            <li><a href="#">View Profile</a></li>
+            <li><a href="contact">Contact Us</a></li>
+            <li><a href="signout">Log Out</a></li>
+        </ul>
+    </nav>
+    <div class="background-overlay">
+        <div class="view-profile-container">
+            <div class="profile-info">
+                <div class="profile-picture-container">
+                    <h3>Profile Picture:</h3>
+                    <img src="../ressources/pfp.png" alt="Profile Picture" id="profile-pic" class="profile-picture">
+                    <button type="button" id="edit-avatar-button" class="edit-button">Edit</button>
+                    <div id="avatar-selection" class="avatar-selection" style="display:none;">
+                        <!-- Avatar Images -->
+                        <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Shadow" alt="Avatar 1" class="avatar" data-avatar="user_1">
+                        <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Socks" alt="Avatar 2" class="avatar" data-avatar="user_2">
+                        <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Bob" alt="Avatar 3" class="avatar" data-avatar="user_3">
+                        <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Boo" alt="Avatar 4" class="avatar" data-avatar="user_4">
+                        <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Bandit" alt="Avatar 5" class="avatar" data-avatar="user_5">
+                        <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Mia" alt="Avatar 6" class="avatar" data-avatar="user_6">
+                    </div>
+                </div>
+                <div class="stats-container">
+                    <h3>Stats:</h3>
+                    <p>Games Played: <span id="games-played">100</span></p>
+                    <p>Games Won: <span id="games-won">60</span></p>
+                    <p>Games Lost: <span id="games-lost">40</span></p>
+                    <p>Winning Percentage: <span id="winning-percentage">60%</span></p>
+                </div>
+            </div>
+            <form class="profile-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <div class="input-group">
+                        <input type="text" id="username" name="username" value="JohnDoe" disabled>
+                        <button type="button" class="edit-button">Edit</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" value="johndoe@example.com" disabled>
+                        <button type="button" class="edit-button">Edit</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <div class="input-group">
+                        <input type="password" id="password" name="password" value="********" disabled>
+                        <button type="button" class="edit-button">Edit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../js/viewprofile.js"></script>
+</body>
+</html>

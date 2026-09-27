@@ -1,0 +1,112 @@
+/* Basic styling for the How to Play page */
+@font-face {
+    font-family: 'SunnySpells-Regular';
+    src: url('../ressources/sunny-spells-font/SunnyspellsRegular-MV9ze.otf') format('opentype'); 
+}
+
+body {
+    font-family: 'SunnySpells-Regular', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.how-to-play-container {
+    background-color: rgba(255, 99, 71, 0.8); /* lively color with low opacity */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 700px;
+    margin-top: 100px; /* To center the container */
+    color: #fff;
+    font-size: 22px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 40px;
+}
+
+/* Styles for the navigation bar */
+
+.navbar {
+    background-color: #333;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    padding: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@keyframes shimmer {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.navbar {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    text-decoration: none;
+    color: #FF6347;
+    font-size: 24px;
+    transition: color 0.3s ease;
+    margin-left: 20px;
+}
+
+.logo:hover {
+    color: #cc4c34;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Ensure the items align within the navbar */
+}
+
+.nav-links li {
+    margin-left: 20px;
+    white-space: nowrap; /* Prevent button wrapping */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FF6347;
+}

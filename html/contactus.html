@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/contactus.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body style="background-image: url('../ressources/background.jpg'); background-size: cover; background-position: center;">
+    <nav class="navbar">
+        <a href="dashboard" class="logo">Name, Animal, Thing</a>
+        <ul class="nav-links">
+            <li><a href="dashboard">Home</a></li>
+            <li><a href="viewprofile">View Profile</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="signout">Log Out</a></li>
+        </ul>
+    </nav>
+    <div class="background-overlay">
+        <div class="contact-us-container">
+            <h2>Contact Us</h2>
+            <form class="contact-us-form" action="/contact" method="POST">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="button">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../js/contactus.js"></script>
+</body>
+</html>

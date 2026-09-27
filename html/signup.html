@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body style="background-image: url('../ressources/background.jpg'); background-size: cover; background-position: center;">
+    <nav class="navbar">
+        <a href="home" class="logo">Name, Animal, Thing</a>
+        <ul class="nav-links">
+            <li><a href="home">Home</a></li>
+            <li><a href="howtoplay">How to Play</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+    <div class="background-overlay">
+        <div class="signup-container">
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label>Choose an Avatar:</label>
+                    <div class="avatar-selection">
+                        <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Shadow" alt="Avatar 1" class="avatar" data-avatar="user_1">
+                        <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Socks" alt="Avatar 2" class="avatar" data-avatar="user_2">
+                        <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Bob" alt="Avatar 3" class="avatar" data-avatar="user_3">
+                        <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Boo" alt="Avatar 4" class="avatar" data-avatar="user_4">
+                        <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Bandit" alt="Avatar 5" class="avatar" data-avatar="user_5">
+                        <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Mia" alt="Avatar 6" class="avatar" data-avatar="user_6">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Sign Up">
+                    <p>Already have an account? <a href="signin">Sign in</a></p>
+                </div>
+            </form>
+            <div id="error-message"></div>
+
+        </div>
+    </div>
+    <script src="../js/signup.js"></script>
+</body>
+</html>

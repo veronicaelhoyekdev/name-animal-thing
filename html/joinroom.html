@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Join Room</title>
+    <link rel="stylesheet" href="../css/joinroom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body style="background-image: url('../ressources/background.jpg'); background-size: cover; background-position: center;">
+    <nav class="navbar">
+        <a href="dashboard" class="logo">Name, Animal, Thing</a>
+        <ul class="nav-links">
+            <li><a href="dashboard">Home</a></li>
+            <li><a href="viewprofile">View Profile</a></li>
+            <li><a href="contact">Contact Us</a></li>
+            <li><a href="signout">Log Out</a></li>
+        </ul>
+    </nav>
+    <div class="background-overlay">
+        <div class="join-room-container">
+            <h2>Join Room</h2>
+            <form class="join-room-form">
+                <div class="form-group">
+                    <label for="room-code">Enter Room Code:</label>
+                    <input type="text" id="room-code" name="room-code" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="button">Join</button>
+                </div>
+            </form>
+            <div id="error-message" style="color: red;"></div>
+        </div>
+    </div>
+    <script src="../js/joinroom.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Results</title>
+    <link rel="stylesheet" href="../css/results.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body style="background-image: url('../ressources/background.jpg'); background-size: cover; background-position: center;">
+    <nav class="navbar">
+        <a href="dashboard" class="logo">Name, Animal, Thing</a>
+        <ul class="nav-links">
+            <li><a href="dashboard">Home</a></li>
+            <li><a href="viewprofile">View Profile</a></li>
+            <li><a href="contact">Contact Us</a></li>
+            <li><a href="signout">Log Out</a></li>
+        </ul>
+    </nav>
+    <div class="background-overlay">
+        <div class="results-container">
+            <h2>Game Results</h2>
+            <div class="players-results">
+                <!-- Repeat this block for each player -->
+                <div class="player-result">
+                    <span class="player-name">Player Name</span>
+                    <span class="total-grade">Total Grade</span>
+                </div>
+            </div>
+            <button type="button" id="dashboardButton">Exit</button>
+        </div>
+    </div>
+    <script src="../js/results.js"></script>
+</body>
+</html>
